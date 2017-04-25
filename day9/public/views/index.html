@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body ng-app="app" ng-controller="mainCtrl">
+    <p class="k"> MENU FOOD </p>
+
+     <button id="t" ng-click="get()" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">FOOD</button>
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <input ng-model="name" placeholder="Name" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <input ng-model="type" placeholder="type" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <input ng-model="price" placeholder="price" class="form-control">
+            </div>
+             <div class="col-md-3">
+                <input ng-model="imgUrl" placeholder="Img Url" class="form-control" >
+            </div>
+            
+            <div id="b">
+              <button ng-click="add()" id="b" class="btn btn-danger">Add</button>  
+            </div>
+            <br>
+        </div>
+        <div id="x" class="row" ng-repeat="asd in list | orderBy:'vote':true track by $index">
+           <span class="col-md-2" class="pull-right">  
+                        <i id="like2" ng-click="upVote(asd)" class="glyphicon glyphicon-thumbs-up"></i> <div id="like2-bs3"></div>
+                       <p class="q"> {{asd.vote}}</p> 
+                        
+                        <i id="dislike2" ng-click="downVote(asd)" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike2-bs3"></div>
+                    </span>
+                     <p class="col-md-2" style="color:#1F2A3B">{{asd.name}}</p>
+                    <p class="col-md-2" style="color:green">{{asd.type}}</p>
+                    <p class="col-md-2" style="color:red">{{asd.price}} L.B</p>
+                     <img id="w" class="col-md-2" src=css/{{asd.imgUrl}}></img>
+                    <p id="l" class="col-md-2">
+                        <button ng-click="del(asd._id)" class="btn btn-info">Delete</button>
+                        <button id="od" ng-click="update(asd._id)" id="a" class="btn btn-danger">update</button>
+                    </p>
+                    
+                      <div  class='row'>
+                    <div class='column'>
+                        <div  class="col-md-6" class='comments'>
+                            <form>
+                                <fieldset>
+                                    <legend>
+                                        Your comment
+                                    </legend>
+                                    <ul>
+                                <li ng-repeat='listcomment in asd.comments'>
+                                    <div class='comment' ng-class='{approved: comment.approved}'>
+<!--
+                                       <h4 class="co">
+                                            {{listcomment.Person}}
+                                        </h4>
+-->
+                                        <h5 class="ca">
+                                           {{listcomment.Comment}}
+                                        </h5>
+                                        
+                                        <p>
+                
+                  <button id="a" ng-click='delComment(asd._id, $index)'> DEL</button>
+                </small>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+<!--
+                                    <div class="col-md-6">
+                                        <label>
+                                            Person :  
+                                            <input class="g" ng-model='comment.nameP'  class="form-control">
+                                        </label>
+                                    </div>
+-->
+                                    <div class="col-md-8">
+                                        <label>
+                                            Comment:
+                                            <input id="p" ng-model='comment.textP' type="text" class="form-control">
+                                        </label>
+                                    </div>
+                                    <div>
+                                       <br>
+                                       <div class="col-md-6">
+                                        <input id="m" class="btn btn-info"  class='button' ng-click="addComment(asd._id,comment)  "type='submit' value='Comment' >
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <h3>
+                              {{asd.comments.length}} Comments
+                           </h3>
+                         
+                        </div>
+
+                    </div>
+                       
+                            <hr size="2" width="80%" align="center" style="border-color:#878787; background:#878787">
+                </div>
+           
+        </div>
+    </div>
+
+    <script src="https://code.angularjs.org/1.6.3/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+   
+</body>
+
+</html>

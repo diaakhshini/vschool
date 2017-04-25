@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+   <div ng-app="MyApp">
+      <div ng-controller="mainController">
+      <ul ng-repat="player in players.kills">
+          <li>{{player.handle}}</li>
+           <li>{{player.rank}}</li>
+            <li>{{player.clan}}</li>
+            <ul ng-repeat="c in player.clan"></ul>
+            <li {{c}}></li>
+      </ul>
+       <div></div>
+       <div>
+</body>
+
+</html>

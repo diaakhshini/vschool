@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our first SPA app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="stayl.css">
+
+</head>
+
+<body ng-app="app">
+    <!--
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+        </div>
+        <ul class="nav navbar-nav">
+
+            <a href="#/Home">Home</a>
+            <a href="#/contactUs">contactUs</a>
+            <a href="#/About">About</a>
+
+        </ul>
+    </div>
+-->
+
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MOVIES NAME</a>
+            </div>
+            <ul class="nav navbar-nav">
+
+                <li><a href="#/Home">Home</a></li>
+                <li><a href="#/contactUs">contactUs</a></li>
+                <li><a href="#/About">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+    </nav>
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+
+                <div class="w3-content" style="max-width:800px">
+                    <img class="mySlides" src="" style="width:100%">
+                    <img class="mySlides" src="" style="width:100%">
+                    <img class="mySlides" src="" style="width:100%">
+                </div>
+
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-btn" ng-click="plusDivs(-1)">❮ Prev</button>
+                        <button class="w3-btn" ng-click="plusDivs(1)">Next ❯</button>
+                    </div>
+                    <button class="w3-btn demo" ng-click="currentDiv(1)">1</button>
+                    <button class="w3-btn demo" ng-click="currentDiv(2)">2</button>
+                    <button class="w3-btn demo" ng-click="currentDiv(3)">3</button>
+                </div>
+
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+-->
+    </nav>
+
+    <ng-view></ng-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.2/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="Home/Home.js"></script>
+    <script src="contactUs/contactUs.js"></script>
+    <script src="About/About.js"></script>
+
+
+</body>
+
+</html>

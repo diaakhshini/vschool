@@ -1,0 +1,115 @@
+body {
+    background-image: url(BAC.jpg);
+    background-repeat: space;
+}
+
+.mail {
+    height: 100px;
+    background-color: #35818F;
+    color: white;
+    margin: 5px;
+}
+
+.internet {
+    height: 100px;
+    background-color: #494DB1;
+    color: white;
+    margin: 5px;
+}
+
+.store {
+    height: 100px;
+    background-color: #529E3A;
+    color: white;
+    margin: 5px;
+}
+
+.Bing {
+    height: 100px;
+    background-color: goldenrod;
+    margin: 5px;
+}
+
+.unistall {
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+}
+
+.calendar {
+    height: 100px;
+    background-color: darkorchid;
+    margin: 5px;
+}
+
+.Maps {
+    height: 100px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.sky {
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+}
+
+.Games {
+    height: 100px;
+    background-color: green;
+    margin: 5px;
+}
+
+.Camera {
+    height: 100px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.people {
+    height: 100px;
+    background-color: orangered;
+    margin: 5px;
+}
+
+.Coal {
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+}
+
+.Video {
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+}
+
+.music {
+    height: 100px;
+    background-color: orangered;
+    margin: 5px;
+}
+
+.net {
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+}
+
+.massage {
+    height: 100px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.sports {
+    height: 100px;
+    background-color: dodgerblue;
+    margin: 5px;
+}
+
+.net2 {
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+}

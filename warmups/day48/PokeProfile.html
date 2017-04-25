@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="PokeProfile.css">
+</head>
+
+<body ng-app="app" ng-controller="ctrl">
+    <p class="unit">Enter Pokemon Number</p>
+    <div class="container"></div>
+    <div class="row"></div>
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+        <input type="number" ng-model="num">
+        <br>
+        <button ng-click="getpoke()" class="btn btn-success"> GET pokemon</button>
+
+        <p>{{list}}</p>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="PokeProfile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+    <div ng-init="loadData()">
+        <div ng-repeat="item in ProductsItems track by $index">
+            <div ng-if="!item.edit">
+                <p>name: {{item.name}}</p>
+                <p><img ng-src={{item.imgUrl}}> </p>
+                <p>quantity: {{item.quantity}}</p>
+                <p>price: {{item.price}}</p>
+                <p>section: {{item.section}}</p>
+                <p>
+
+                    <button ng-click="deleteData(item._id)" class="btn btn-info">Delete</button>
+                    <button ng-click="toggleEdit($index)" class="btn btn-danger">Update</button>
+            </div>
+            <div ng-if="item.edit">
+                <p>name:
+                    <input type="text" ng-model="item.name">
+                </p>
+
+                <p>quantity:
+                    <input type="text" ng-model="item.quantity">
+                </p>
+                <p> imgUrl:
+                    <img src="{{item.imgUrl}}">
+                    <p>price:
+                        <input type="text" ng-model="item.price">
+                    </p>
+                    <p>section:
+                        <input type="text" ng-model="item.section">
+                    </p>
+                    <p>
+                        <button ng-click="toggleEdit($index)" class="btn btn-info">Cancel</button>
+                        <button ng-click="putdata(item)" class="btn btn-danger">Save</button>
+            </div>
+
+            <!--               -->
+            </p>
+
+        </div>
+    </div>
+    <input ng-model="name" type="text" placeholder="name">
+    <input ng-model="quantity" type="number" placeholder="quantity">
+    <input ng-model="imgUrl" type="text" placeholder="Image URL">
+    <input ng-model="price" type="number" placeholder="price">
+    <input ng-model="section" type="text" placeholder="section">
+    <button ng-click="addItem()" class="btn btn-success">Add</button>
+
+    <ng-view></ng-view>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js">
+    </script>
+    <script src="/js/api.js"></script>
+
+
+</body>
+
+</html>

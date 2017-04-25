@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <link rel="stylesheet" href="HitList.css">
+
+    <meta charset="UTF-8">
+    <title>angular</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" ng-init="loadData()">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" ng-repeat="todoItem in todoItems"> <img id="ww" ng-src={{todoItem.image}}>
+                <br>
+                <p id="w">{{todoItem.name}} </p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="HitList.js">
+    </script>
+
+</body>
+
+</html>

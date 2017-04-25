@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="container-fluid" ng-controller="myController">
+
+      <div class="row">
+            <div class="col-md-4">
+                <input type="text" placeholder="Title" class="form-control" ng-model="title">
+            </div>
+            <div class="col-md-4">
+                <input type="text" placeholder="Img url" class="form-control" ng-model="imgUrl">
+            </div>
+            <div class="col-md-4">
+                <input type="text" placeholder="Description" class="form-control" ng-model="description">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button class="btn btn-warning btn-block" id="btn" ng-click="addImg()">Add New Images</button>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" >
+               <div ng-repeat="x in arr">
+               <div>
+                <h1>{{x.title}}</h1>
+                <p>{{x.desc}}</p>
+                <img ng-src={{x.img}}>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="Ugly%20Things.js"></script>
+</body>
+
+</html>

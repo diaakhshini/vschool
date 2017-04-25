@@ -1,0 +1,40 @@
+<div ng-init="loadData()">
+
+    <div ng-repeat="item in ProductsItems track by $index">
+        <div ng-if="!item.edit">
+            <p>name: {{item.name}}</p>
+            <img ng-src={{item.imgUrl}}>
+            <p>quantity: {{item.quantity}}</p>
+            <p>price: {{item.price}}</p>
+            <p>section: {{item.section}}</p>
+            <p>
+
+                <button ng-click="deleteData(item._id)" class="btn btn-info">Delete</button>
+                <button ng-click="toggleEdit($index)" class="btn btn-danger">Update</button>
+        </div>
+        <div ng-if="item.edit">
+            <p>name:
+                <input type="text" ng-model="item.name">
+            </p>
+
+            <p>quantity:
+                <input type="text" ng-model="item.quantity">
+            </p>
+            <p> imgUrl:
+               <input type="text" ng-model="item.imgUrl">
+<!--                <img ng-src="{{item.imgUrl}}">-->
+                <p>price:
+                    <input type="text" ng-model="item.price">
+                </p>
+                <p>section:
+                    <input type="text" ng-model="item.section">
+                </p>
+                <p>
+                    <button ng-click="toggleEdit($index)" class="btn btn-info">Cancel</button>
+                    <button ng-click="putdata(item)" class="btn btn-danger">Save</button>
+        </div>
+
+        <!--               -->
+
+    </div>
+</div>

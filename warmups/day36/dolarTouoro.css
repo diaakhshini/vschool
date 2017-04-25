@@ -1,0 +1,10 @@
+body{
+  background-image: url(du.jpg);
+    background-repeat:repeat;
+    color: darkblue;
+    border: 50%;
+}
+.back{
+   background-color:goldenrod;
+    height: 200px;
+}

@@ -1,0 +1,31 @@
+.box1{
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    border: 10%    
+}
+.box2{
+   width: 50%;
+    height: 200px;
+    background-color: red;
+    float: left;
+    border: 10%
+         
+}
+.box3{
+    width: 50%;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+    border: 10%
+        
+}
+.box4{
+    width: 50%;
+    height: 200px;
+    background-color: green;
+    float: left;
+    border: 10%
+        
+}

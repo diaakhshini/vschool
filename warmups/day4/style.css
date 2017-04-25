@@ -1,0 +1,31 @@
+P{
+    color: blueviolet;
+    font-size: 40px;
+    background-color: yellow;
+    border: 2px red solid
+        
+}
+
+
+#main-navbar{
+    background-color: aqua;
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    
+}
+#main-navbar a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: blod;
+    padding: 5px;
+}
+#firstId .nameClass{
+    background-color: aqua;
+}
+#2ndId .nameClass{
+    background-color: antiquewhite
+}
+#3rdId .nameClass{
+    background-color: aliceblue
+}

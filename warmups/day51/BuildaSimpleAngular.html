@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="mainController">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <lable>{{counter1}}</lable>
+            </div>
+            <div class="col-md-6">
+                <lable>{{counter2}}</lable>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="http://www.gettyimages.com/gi-resources/images/Embed/new/embed2.jpg" height="150px" width="150px">
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="col-md-4">
+            <p></p>
+
+            <button ng-click="like1()">like</button>
+        </div>
+
+
+        <div class="col-md-4">
+            <p></p>
+            <img src="http://www.gettyimages.com/gi-resources/images/Embed/new/embed2.jpg" height="150px" width="150px">
+            <button ng-click="like2()">like</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="BuildaSimpleAngular.js"></script>
+</body>
+
+</html>

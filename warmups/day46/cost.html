@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-Controller="myCtrl">
+    <input type="text" placeholder="name" class="form control" ng-model="name">
+    <input type="number" placeholder="cost" class="form control" ng-model="cost">
+    <button ng-click="addItem()">Add</button>
+    <div>tota: {{total}}</div>
+    <ul ng-repeat="item in todoItems track by $index">
+        <li>name: {{item.name}}</li>
+        <li>cost: {{item.cost}}</li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="service.ng.js"></script>
+</body>
+
+</html>

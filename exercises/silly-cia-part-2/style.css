@@ -1,0 +1,25 @@
+#main-head {
+    color: darkgreen;
+    font-family: georgia;
+    text-align: center;
+}
+#submain-head {
+    font-family: georgia;
+    text-align: center;
+}
+p{
+    line-height: 45px;
+}
+
+a{
+    text-decoration: none;
+}
+#text{
+    text-transform: uppercase;
+}
+
+img{
+    float: left;
+    width: 35%;
+    margin: 50px;
+}

@@ -1,0 +1,23 @@
+h1{
+    font-family: sans-serif;
+    margin-top: 20px;
+    background-color: blue;
+    border: 1px solid;
+}
+#right{
+    padding-right: 170px;
+    background-color: green;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+    padding-left: 270px;
+}
+div{
+    border: 2px solid black;
+}
+p{
+    font-size: 20px;
+    
+}

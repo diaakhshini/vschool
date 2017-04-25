@@ -1,0 +1,31 @@
+git init
+
+--------------------------
+
+git add <file name>
+git add *
+
+--------------------------
+
+git commit -m "any Massege"
+
+
+--------------------------
+
+git config --global user.email "your email"
+git config --global user.name "your name"
+
+
+--------------------------
+
+
+git remote add origin https://github.com/Diaa/vcshool.git
+
+
+--------------------------
+
+
+git push origin master
+
+
+--------------------------

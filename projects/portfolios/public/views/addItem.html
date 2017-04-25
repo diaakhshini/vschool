@@ -1,0 +1,17 @@
+<p>this is Add</p>
+<div class="row" ng-init="loadData()">
+    <input ng-model="name" type="text" placeholder="name">
+    <input ng-model="quantity" type="number" placeholder="quantity">
+    <input ng-model="imgUrl" type="text" placeholder="Image URL">
+    <input ng-model="price" type="number" placeholder="price">
+    <input ng-model="section" type="text" placeholder="section">
+    <button ng-click="addItem()" class="btn btn-success">Add</button>\
+    <div ng-repeat="item in ProductsItems track by $index">
+        <p>name: {{item.name}}</p>
+        <img ng-src={{item.imgUrl}}>
+        <p>quantity: {{item.quantity}}</p>
+        <p>price: {{item.price}}</p>
+        <p>section: {{item.section}}</p>
+
+    </div>
+</div>

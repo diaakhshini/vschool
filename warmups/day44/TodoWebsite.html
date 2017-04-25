@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+</head>
+
+<body ng-app="myApp" ng-Controller="myController" ng-init="loadData()">
+    <h1 align="center">Angular Todo Website<br> (Talking to the Server)</h1>
+    <div ng-repeat="todoItem in todoItems">
+        <p>{{todoItem.title}}</p>
+        <button ng-click="deletItem(todoItem._id)">Delet</button>
+        <button ng-click="completed(todoItem._id)" ng-if="todoItem.completed">completed</button>
+
+    </div>
+    <input ng-model="task">
+    <button ng-click="add(task)">Add</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="TodoWebsite.js"></script>
+</body>
+
+</html>

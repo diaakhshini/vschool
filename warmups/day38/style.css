@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.info_text {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container
+{
+    background-color: beige !important;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.marp{
+    
+margin-top: 100px;}
+.marp{
+    margin-top: 100px;
+}
+img{float: left}
+
+.centered {
+    text-align: center;
+}

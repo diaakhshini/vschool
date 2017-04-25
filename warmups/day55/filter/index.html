@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+    <input ng-model="searchTerm">
+    <p>{{searchTerm | uppercase}}</p>
+    <ul ng-repeat="item in data | search: searchTerm">
+        <li>{{item.name}}</li>
+    </ul>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+< /html>

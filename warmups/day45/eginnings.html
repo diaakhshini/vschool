@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-Controller="myCtrl">
+    <h1 align="center"> Angular Services Beginnings</h1>
+    <div ng-repeat="todoItem in todoItems track by $index">
+        <p>{{todoItem}}</p>
+    </div>
+    <input type="text" placeholder="Pokemon name" class="form control" ng-model="inputName">
+    <button ng-click="addPoke(inputName)">addPokemon </button>
+    <button ng-click="removePoke(inputName)">removePoke </button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="Beginnings.js"></script>
+</body>
+
+</html>

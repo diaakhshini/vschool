@@ -1,0 +1,23 @@
+<p class="text" ng-init='getData()'>
+    THE NEW MOVIES</p>
+<div align="center">
+    <input type='number' ng-model='limit' placeholder='limit' ng-change='getLimit();' class="form-control">
+</div>
+
+<div class='row'>
+    <div class='col-md-4 content' ng-repeat="todoItem in todoItems.data.movies">
+        <small style='margin-right:20px;'>year : {{todoItem.year}}</small> <small>rating : {{todoItem.rating}}</small>
+        <div class="imgM">
+            <img src="{{todoItem.medium_cover_image}}">
+        </div>
+        <h2><a href="{{todoItem.url}}" target="_blank">{{todoItem.title}}</a></h2>
+        <div>
+            <p>
+                {{todoItem.summary}}
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

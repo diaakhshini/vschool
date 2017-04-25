@@ -1,0 +1,85 @@
+body {
+    background: url("Rustic-background.jpg") fixed;
+    background-size: cover;
+    
+    width: 100%;
+    
+}
+.k{
+   text-align:center;
+   font-size: 50px;  
+   font-family: Stencil; 
+    color: chocolate;  
+} 
+
+p {
+    font-size: 25px;
+    font-family: cursive;
+}
+.q{
+  font-size: 15px;  
+}
+
+
+#like2{
+    color: green;
+    font-size: 25px;
+}
+#dislike2{
+    color: red;
+    font-size: 25px;
+}
+#a {
+  opacity: 0.5;
+  color: black;
+    border-radius: 25%;
+    background-color: chartreuse;
+}
+
+.co{
+    color: black;
+}
+.ca{
+    color:midnightblue;
+}
+#w{
+    width: 175px;
+    height: 100px;
+    border-radius: 15%;
+}
+.g{
+    margin-left: 13px;
+    opacity: 0.7; 
+}
+#p{
+   width: 100%;
+    opacity: 0.7; 
+}
+/*
+#l{
+  opacity: 0.7;  
+}
+*/
+ 
+
+#t{
+  font-family: cursive;  
+    margin-bottom: 25px;
+    margin-left: 635px;
+    text-align: center;
+}
+#b{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+#x{
+   background-color: rgba(255, 255, 255, .3);
+  
+    
+}
+#m{
+  background-color: green; 
+   border-radius: 15%; 
+    opacity: 0.8;
+}

@@ -1,0 +1,53 @@
+nav {
+    border: 1px solid black;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    font-size: 40px
+}
+navbar:hover {
+  text-decoration: underline;  
+}
+footer {
+    border: 1px solid black;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+aside {
+    width: 25%;
+    background-color: gray;
+    color: white;
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+article {
+    background-color: aqua;
+    color: white;
+    padding-left: 5px;
+    padding-left: 5px;
+    position: absolute;
+    float: right;
+    width: 74%;
+ 
+}
+.inBlock {
+    display: inline-block;
+    
+}
+body {
+    padding: 0;
+    margin: 0;
+}

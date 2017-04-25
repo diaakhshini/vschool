@@ -1,0 +1,33 @@
+body{
+    background-image:url(img/tours-travels.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+}  
+
+
+.info_text{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+
+
+.mySlides {display:none;
+    width: 100%;
+    height:300px;
+}
+
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: rgba(27, 26, 26, 0.35);
+    
+}
+
+
+

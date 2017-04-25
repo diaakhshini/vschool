@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box
+}
+.one {
+    border: 10px white solid;
+    background-color: pink;
+    height: 200px;
+    width: 1000px;
+}
+.four {
+    border: 10px white solid;
+    background-color: cadetblue;
+    height: 200px;
+    width: 24%;
+    display: inline-block;
+}
+.two {
+    border: 10px white solid;
+    background-color: aqua;
+    display: inline-block;
+    height: 200px;
+    width: 498px;
+    
+}
+.long {
+    border: 10px white solid;
+    background-color: coral;
+    display: inline-block;
+    height: 200px;
+    width: 47%;
+}
+#diffColor {
+    background-color: darkorange;
+    width: 250px;
+}
+.outer {
+    padding: 20 30;
+}

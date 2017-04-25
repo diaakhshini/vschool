@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="/css/stayl.css">
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+    <div ng-init="loadData()">
+        <ul ng-repeat="item in menuItems track by $index">
+            <li>title: {{item.title}}</li>
+            <li>description: {{item.description}}</li>
+            <ul ng-repeat="comment in item  ">
+                <li>comment: {{comment}}</li>
+            </ul>
+        </ul>
+
+    </div>
+    <a href="#" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+    </a>
+    <input ng-model="title" type="text" placeholder="title">
+    <input ng-model="description" type="text" placeholder="description">
+    <input ng-model="imgUrl" type="text" placeholder="Image URL">
+    <!--    <input ng-model="comment" type="text" placeholder="comment">-->
+    <button ng-click="addItem()">add</button>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js">
+    </script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
